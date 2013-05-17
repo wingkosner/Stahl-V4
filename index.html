@@ -10,25 +10,14 @@
     <link href="css/stahl.css" rel="stylesheet" type="text/css">
 </head>
 
- <body data-target="#navparent" data-spy="scroll">
+<body class="preload">
+    
+    <!--     Container   -->
     <div class="container fill">
-      <div class="row">
-        <div class="span3" id="navparent" data-spy="affix">
-          <a href="#0">
-            <div id="branding">
-            </div></a>
-              <ul class="nav nav-pills nav-stacked span3">
-                <li><a href="#c1">Fourth Edition 2013</a></li>
-                <li><a href="#c2">The Prescriber&rsquo;s Guide</a></li>
-                <li><a href="#c3">Case Studies</a></li>
-                <li><a href="#c4">Self-Assessment Examination</a></li>
-                <li><a href="#c5">Illustrated Series</a></li>
-                <li><a href="#c6">Stahl&rsquo;s Online</a></li>
-                <li><a href="#c7">CNS Spectrum</a></li>
-                <li><a href="#c8">Related titles</a></li>
-             </ul>
-        	</div><!--navparent-->
-            
+
+<!--     Home   -->
+        <div id="home" class="row">
+
         <div class="span9 offset3">
             <h1>Stahl&rsquo;s Essential Psychopharmacology</h1>
             <h3> Essential. Trusted. Indispensable.</h3>
@@ -38,36 +27,135 @@
                     <p>Stahl&rsquo;s Essential Psychopharmacology is a suite of products that began 20 years ago as an offshoot of Dr. Stahl’s lectures about the mechanisms of disease and drug action. Consisting of not just books, but also of an online product, CME, and journal, this is the complete resource for psychiatrists, psychologists, primary care physicians, pharmacists, and nurse practitioners. Even patients and their families will find this array of products helpful in navigating the complex world of psychotropic drugs!</p>
                 </div>
                 <div class="span3">
-                    <a href="#" class="btn btn-success btn-large" style="margin-left:10px;"><i class="icon-white icon-shopping-cart"></i> BUY IT HERE!</a>
+                    <a href="http://www.cambridge.org/us/knowledge/isbn/item7075773/?site_locale=en_US" class="btn btn-success btn-large" style="margin-left:10px;" target="_blank"><i class="icon-white icon-shopping-cart"></i> BUY IT HERE!</a>
                 </div>
-
             </div>
            
             <div class="row feature-group">
-                
+
                 <div class="span3">
-                    <a href="#" class="btn btn-info btn-feature btn-block btn-large" ><span class="bold">LIMITED-TIME OFFER!</span><br>Get 25% off Stahl and <br>Stahl-related books!</a>
+                    <a id="link-offer" href="#offer" class="btn btn-info btn-feature btn-block btn-large" ><span class="bold">LIMITED-TIME OFFER!</span><br>Get 25% off Stahl and <br>Stahl-related books!</a>
                 </div>
                 
                 <div class="span3">
-                    <a href="#" class="btn btn-info btn-lightbox btn-block btn-large" ><span class="lighter"><span class="bold">WATCH THE VIDEO</span></span><br>
+                    <a id="link-video1" href="#video1"  class="btn btn-info btn-lightbox btn-block btn-large" ><span class="lighter"><span class="bold">WATCH THE VIDEO</span></span><br>
 Dr. Stahl Explains What<br>the Suite of Products is</a>
                 </div>
 
                 <div class="span3">
-                    <a href="#" class="btn btn-info btn-feature btn-block btn-large" ><span class="bold">NEWS &amp; EVENTS</span><br>
+                    <a id="link-news" href="#news" class="btn btn-info btn-feature btn-block btn-large" ><span class="bold">NEWS &amp; EVENTS</span><br>
 Fourth Edition debuts<br>at APA 2013 | SF</a>
                 </div>
 
             </div>
 
           </div>
-
            
-        </div><!--row-->
-     </div><!--container-->
+        </div><!--/Home-->
 
+<!--     Offer   -->
+		<div id="offer" class="panel-left">
+        
+        <div class="span9 offset3">
+            <h1>Limited Time Offer!</h1>
+            <h3> Stay informed on all things Stahl and save big!</h3>
+            <div class="carousel"></div>
+            <div class="row">
+                <div class="span9">
+                    <p>Until June 30, we are offering a special discount offer of 25% off any and all of the products in the Stahl suite and other Stahl-related titles (offer excludes Stahl&rsquo;s Essential Psychopharmacology, Fourth Edition). Please submit your email address below to receive your discount code + periodic news, update, and future special offers on all things Stahl!</p>
+                </div>
+                <div class="span3 offset3">
+                    <input class="span3" type="email" required>
+                    <a href="#" class="btn btn-success btn-large btn-block" type="submit">GET YOUR DISCOUNT!</a>
+                </div>
+            </div>
+        <a href="#" class="btn">BACK</a>
+          </div>  
+        </div><!--/Offer-->
+
+<!--     Video1   -->
+		<div id="video1" class="panel-left lightbox">
+        <div class="row">
+        <div class="span12 lightbox">
+            <h1>The Stahl Suite of Products</h1>
+        </div>
+        </div>
+        
+        <div class="row">
+            <div class="span12 video"><iframe id="ytplayer" type="text/html" width="640" height="390"
+  src="http://www.youtube.com/embed/et_aoFEmaRI?autoplay=0&origin=http://stahlsessential.com"
+  frameborder="0" allowfulscreen></iframe>
+          </div>  
+        </div>
+        <div class="row">
+                <div class="span8 offset2 lightbox">
+                    <p>Dr. Stahl explains the origins of the Essential Psychopharmacology, as well as the wide array of products in the suite.</p>
+                           <a href="#" class="btn feature-group">BACK</a>
+
+          </div>  
+          </div>  
+
+        </div><!--/Video1-->
+
+<!--     News   -->
+		<div id="news" class="panel-left feature">
+        
+        <div class="span9 offset3">
+            <h1>American Psychiatric Association Annual Meeting</h1>
+            <div class="row">
+                <div class="feature-image pagination-centered"><img src="/assets/American-Psychiatric-Association-Annual-Meeting-300.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="span9 pagination-centered">
+                    <p><em>Stahl’s Essential Psychopharmacology, Fourth Edition</em> debuts at this year’s<br>American Psychiatric Association Annual Meeting on May 18-21 in San Francisco!</p>
+                    <p>Visit Cambridge University Press at Booth 1805 to pick up your copy and meet Dr. Stahl!</p>
+
+
+<p>Dr. Stahl will be at the booth to sign copies of his book on:</p>
+
+
+<p>May 19: 2:00pm-4:00pm<br>
+May 20: 10:00am-12:00pm</p>
+
+<p>See you there!</p>
+                </div>
+            </div>
+        <a href="#" class="btn">BACK</a>
+          </div>
+        </div><!--/News-->
+        
+        
+        <!--     Header   -->
+		<div id="header">
+          <a href="#0">
+            <div id="branding">
+            </div></a>
+                            
+              <ul id="navigation" class="nav nav-pills nav-stacked span3">
+                <li><a href="#c1">Fourth Edition 2013</a></li>
+                <li><a href="#c2">The Prescriber&rsquo;s Guide</a></li>
+                <li><a href="#c3">Case Studies</a></li>
+                <li><a href="#c4">Self-Assessment Examination</a></li>
+                <li><a href="#c5">Illustrated Series</a></li>
+                <li><a href="#c6">Stahl&rsquo;s Online</a></li>
+                <li><a href="#c7">CNS Spectrum</a></li>
+                <li><a href="#c8">Related titles</a></li>
+             </ul>
+        	</div><!--/header-->
+        
+        
+     </div><!--/container-->
+<!--
 	 <script src="http://code.jquery.com/jquery.js"></script>
+-->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.3.2'></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function() {
+          $('body').removeClass('preload');
+        });
+    </script>
+
 </body>
 </html>
