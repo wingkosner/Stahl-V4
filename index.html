@@ -84,14 +84,27 @@ Fourth Edition debuts<br>at APA 2013 | SF</a>
         </div>
         
         <div class="row">
-            <div class="span12 video"><iframe width="640" height="360" src="http://www.youtube.com/embed/qxOLekscLI8?rel=0" frameborder="0" allowfullscreen></iframe>
-          </div>  
+<!--
+            <div id='youtube-player-container'>
+-->
+                <div class="span12 video"><iframe width="640" height="360" src="http://www.youtube.com/embed/qxOLekscLI8?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>  
+<!--
+            </div>        
+-->
         </div>
         <div class="row">
                 <div class="span8 offset2 lightbox">
                     <p>Dr. Stahl explains the origins of <em>Essential Psychopharmacology</em>, as well as the wide array of products in the suite.</p>
-            <a href="previous.html" onClick="history.back();return false;player.pauseVideo(); return false;" class="btn feature-group">GO BACK</a>
-<!--
+            <a href="" onClick="window.history.back();player.pauseVideo();return false;" class="btn feature-group">GO BACK</a>
+
+<!-- previously working button
+
+            <a href="previous.html" onClick="history.back();return false;" class="btn feature-group">GO BACK</a>
+-->
+<!-- tests
+                    
+            <a href="previous.html" onClick="history.back();jQuery("#youtube-player-container").tubeplayer("pause"); return false;" class="btn feature-group">GO BACK</a>
             <a href="previous.html" onClick="history.back();return false;player.pauseVideo(); return false;" class="btn feature-group">GO BACK</a>
 
 <a href="javascript: void(0)" onclick="player.pauseVideo(); return false">pause</a><br>
@@ -118,7 +131,7 @@ Fourth Edition debuts<br>at APA 2013 | SF</a>
         <div class="row">
                 <div class="span8 offset2 lightbox">
                     <p>Watch Dr. Stahl explain the textbook and identify what’s new in the fourth edition.</p>
-            <a href="previous.html" onClick="history.back();return false;" class="btn feature-group">GO BACK</a>
+            <a href="" onClick="window.history.back();player.pauseVideo();return false;" class="btn feature-group">GO BACK</a>
 
           </div>  
           </div>  
@@ -140,7 +153,7 @@ Fourth Edition debuts<br>at APA 2013 | SF</a>
         <div class="row">
                 <div class="span8 offset2 lightbox">
                     <p>Watch Dr. Stahl explain what The Prescriber&rsquo;s Guide is all about.</p>
-            <a href="previous.html" onClick="history.back();return false;" class="btn feature-group">GO BACK</a>
+            <a href="" onClick="window.history.back();player.pauseVideo();return false;" class="btn feature-group">GO BACK</a>
 
           </div>  
           </div>  
@@ -162,7 +175,7 @@ Fourth Edition debuts<br>at APA 2013 | SF</a>
         <div class="row">
                 <div class="span8 offset2 lightbox">
                     <p>Dr. Stahl explains the Case Studies for his <em>Essential Psychopharmacology</em>.</p>
-            <a href="previous.html" onClick="history.back();return false;" class="btn feature-group">GO BACK</a>
+            <a href="" onClick="window.history.back();player.pauseVideo();return false;" class="btn feature-group">GO BACK</a>
 
           </div>  
           </div>  
@@ -178,13 +191,13 @@ Fourth Edition debuts<br>at APA 2013 | SF</a>
         </div>
         
         <div class="row">
-            <div class="span12 video"><iframe width="640" height="360" src="http://www.youtube.com/embed/O0eeNhJFgfw?rel=0" frameborder="0" allowfullscreen></iframe>
+            <div class="span12 video"><iframe width="640" height="360" src="http://www.youtube.com/embed/OYSlQK9o-8Q?rel=0" frameborder="0" allowfullscreen></iframe>
           </div>  
         </div>
         <div class="row">
                 <div class="span8 offset2 lightbox">
                     <p>Watch Dr. Stahl explain how this book can help you stay up to date and assess your level of competence.</p>
-            <a href="previous.html" onClick="history.back();return false;" class="btn feature-group">GO BACK</a>
+            <a href="" onClick="window.history.back();player.pauseVideo();return false;" class="btn feature-group">GO BACK</a>
 
           </div>  
           </div>  
@@ -206,7 +219,7 @@ Fourth Edition debuts<br>at APA 2013 | SF</a>
         <div class="row">
                 <div class="span8 offset2 lightbox">
                     <p>Watch Dr. Stahl explain the evolution of <em>The Illustrated Series</em> from the textbook and <em>The Prescriber’s Guide</em>.</p>
-            <a href="previous.html" onClick="history.back();return false;" class="btn feature-group">GO BACK</a>
+            <a href="" onClick="window.history.back();player.pauseVideo();return false;" class="btn feature-group">GO BACK</a>
 
           </div>  
           </div>  
@@ -228,7 +241,7 @@ Fourth Edition debuts<br>at APA 2013 | SF</a>
         <div class="row">
                 <div class="span8 offset2 lightbox">
                     <p>Dr. Stahl talks about <em>CNS Spectrums</em>.</p>
-            <a href="previous.html" onClick="history.back();return false;" class="btn feature-group">GO BACK</a>
+            <a href="" onClick="window.history.back();player.pauseVideo();return false;" class="btn feature-group">GO BACK</a>
 
           </div>  
           </div>  
@@ -736,11 +749,40 @@ CNS Spectrums:<br>What&rsquo;s it about?</a>
         
         </div><!--/content-->
      </div><!--/container-->
-<!--
-	 <script src="http://code.jquery.com/jquery.js"></script>
--->
+
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.3.2'></script>
+<!--
+    <script src="js/jQuery.tubeplayer.min.js"></script>
+-->
     <script src="js/bootstrap.min.js"></script>
+
+<!--
+    <script type="text/javascript">
+jQuery("#youtube-player-container").tubeplayer({
+	width: 640, // the width of the player
+	height: 360, // the height of the player
+	allowFullScreen: "true", // true by default, allow user to go full screen
+	initialVideo: "DkoeNLuMbcI", // the video that is loaded into the player
+	preferredQuality: "default",// preferred quality: default, small, medium, large, hd720
+	onPlay: function(id){}, // after the play method is called
+	onPause: function(){}, // after the pause method is called
+	onStop: function(){}, // after the player is stopped
+	onSeek: function(time){}, // after the video has been seeked to a defined point
+	onMute: function(){}, // after the player is muted
+	onUnMute: function(){} // after the player is unmuted
+});
+    </script>
+-->
+    <script type="text/javascript">
+function videoReturn() {
+    window.history.back();
+    player.pauseVideo();
+    return false;
+}
+    </script>
+
+    
+    
     <script type="text/javascript">
             $(document).ready(function() {
           $('body').removeClass('preload');
